@@ -35,6 +35,10 @@ gulp.task('watch', function() {
     gulp.watch('./styles/*.css').on('change', function(file) {
         server.changed(file.path);
     });
+
+    gulp.watch('./scripts/*.js').on('change', function(file) {
+        server.changed(file.path);
+    });
 });
 
 gulp.task('default', ['styles', 'watch', 'open']);
