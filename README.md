@@ -12,3 +12,7 @@ Site da VI Semana da Computação e Tecnologia da UFSCar Sorocaba
 - [Craft Conference](http://craft-conf.com/2014/)
 - [jQuery Conference](http://events.jquery.org/2014/san-diego/)
 - [JSCONF 2014](http://2014.jsconf.us/)
+
+## Todo
+
+- Reduzir o número de fontes importadas
