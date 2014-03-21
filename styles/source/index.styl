@@ -31,6 +31,7 @@ color2 = #D90000 // vermelho
 color3 = #FF2D00
 color4 = #04756F // cinza
 color5 = #FFF1C7
+color6 = rgb(180, 180, 180)
 
 html
 body
@@ -52,9 +53,9 @@ section
         width: 800px
 
     &.header
-        background-color: color1
+        background-color: white
         box-sizing: border-box
-        color: white
+        color: color2
         font-size: 16pt
         height: 100%
         overflow: hidden
@@ -79,10 +80,10 @@ section
                 margin: -0.8em auto 4em
 
             button
-                background: white
+                background: color2
                 border: 0
-                box-shadow: 0.4em 0.4em color4
-                color: black
+                box-shadow: 0.4em 0.4em color6
+                color: white
                 font-size: 18pt
                 font-weight: 700
                 margin: -0.2em 0 0 -0.2em
@@ -90,7 +91,7 @@ section
                 padding: 1em 2em
 
                 &:active
-                    box-shadow: 0.2em 0.2em color4
+                    box-shadow: 0.2em 0.2em color6
                     margin: 0
 
         nav

@@ -7,7 +7,7 @@ window.onload = function () {
 
 function updateHeader () {
 
-    var speed = 1.2;
+    var speed = 1.3;
     var nav = document.querySelector('.header nav');
     var header = document.querySelector('.header');
     var headerContent = document.querySelector('.header-content');
