@@ -3,6 +3,9 @@ window.onload = function () {
     window.onscroll = function () {
         updateHeader();
     };
+
+    // call the first time in case URL has ID anchor
+    updateHeader();
 };
 
 function updateHeader () {

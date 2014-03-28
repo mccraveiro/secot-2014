@@ -1,37 +1,16 @@
-/* IconMoon */
-
-@font-face
-    font-family: 'icomoon'
-    src: url('../fonts/icomoon.eot?-xhlqd2')
-    src: url('../fonts/icomoon.eot?#iefix-xhlqd2') format('embedded-opentype'), url('../fonts/icomoon.woff?-xhlqd2') format('woff'), url('../fonts/icomoon.ttf?-xhlqd2') format('truetype'), url('../fonts/icomoon.svg?-xhlqd2#icomoon') format('svg')
-    font-weight: normal
-    font-style: normal
-
-[class^="icon-"], [class*=" icon-"]
-    font-family: 'icomoon'
-    speak: none
-    font-style: normal
-    font-weight: normal
-    font-variant: normal
-    text-transform: none
-    line-height: 1
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-
-.icon-asterisk:before
-    content: "\61"
-
 /*! index.css */
 
+// not being used
 color0 = #D00C18 // vermelho secot
-
 color1 = #2E0927 // navy
-color2 = #D90000 // vermelho
 color3 = #FF2D00
 color4 = #04756F // cinza
 color5 = #FFF1C7
+// being used
+color2 = #D90000 // vermelho
 color6 = rgb(180, 180, 180)
+
+navheight = 4em
 
 html
 body
@@ -100,9 +79,9 @@ section
             color: white
             font-size: 16pt
             font-weight: 100
-            height: 4em
+            height: navheight
             left: 0
-            line-height: 4em
+            line-height: navheight
             position: absolute
             vertical-align: middle
             width: 100%
@@ -114,13 +93,24 @@ section
             .nav-content
                 display: inline-block
 
-                span
-                    margin: 0 2em
+                a
+                    color: white
+                    cursor: pointer
+                    display: inline-block
+                    padding: 0 2em
+                    text-decoration: none
 
-                .separator
-                    color: color5
-                    display: none
-                    font-size: 0.5em
-                    line-height: 4em
-                    margin: 0 2em
-                    vertical-align: middle
+                    &:hover
+                        text-decoration: underline
+
+#sobre:before
+#increvase:before
+#local:before
+#agenda:before
+#patrocinadores:before
+#palestrantes:before
+    display: block
+    content: " "
+    margin-top: -navheight
+    height: navheight
+    visibility: hidden
