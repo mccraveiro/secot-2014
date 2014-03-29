@@ -1,17 +1,44 @@
 // Medium screens
 @media only screen and (min-width: 40.063em) and (max-width: 64em)
 
-    .header
-        height: 100%
+    navheight = 2em
 
-    #sobre:before
-    #increvase:before
-    #local:before
-    #agenda:before
-    #patrocinadores:before
-    #palestrantes:before
-        display: block
-        content: " "
-        margin-top: -navheight
-        height: navheight
-        visibility: hidden
+    section
+        padding: 1em 0
+
+        h1
+            font-size: 20pt
+
+        p
+            box-sizing: border-box
+            font-size: 10pt
+            padding: 0 2em
+            width: 100%
+            max-width: 800px
+
+        &.header
+            padding-bottom: 2em
+
+            .header-content
+                padding-top: 1em
+
+                h1
+                    font-size: 60pt
+                    line-height: 2em
+
+                h2
+                    font-size: 20pt
+                    margin: -0.8em auto 4em
+
+                button
+                    box-shadow: 0.4em 0.4em color2
+                    font-size: 16pt
+                    margin: -0.2em 0 0 -0.2em
+                    padding: 1em 2em
+
+                    &:active
+                        box-shadow: 0.2em 0.2em color2
+                        margin: 0
+
+            nav
+                display: none

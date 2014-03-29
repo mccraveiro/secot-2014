@@ -4,14 +4,19 @@ window.onload = function () {
         updateHeader();
     };
 
+    window.onresize = function () {
+        updateHeader();
+    };
+
     // call the first time in case URL has ID anchor
     updateHeader();
 };
 
 function updateHeader () {
 
-    // Mobile
-    if (window.matchMedia("only screen and (max-width: 40em)").matches) {
+    // Mobile and tablets
+    if (window.matchMedia("only screen and (max-width: 64em)").matches) {
+        resetHeader();
         return;
     }
 
@@ -32,4 +37,14 @@ function updateHeader () {
     } else {
         nav.className = "";
     }
+}
+
+function resetHeader () {
+
+    var nav = document.querySelector('.header nav');
+    var headerContent = document.querySelector('.header-content');
+
+    headerContent.style.marginTop = '0px';
+    headerContent.style.opacity = 1;
+    nav.className = "";
 }
