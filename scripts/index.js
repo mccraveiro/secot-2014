@@ -10,6 +10,11 @@ window.onload = function () {
 
 function updateHeader () {
 
+    // Mobile
+    if (window.matchMedia("only screen and (max-width: 40em)").matches) {
+        return;
+    }
+
     var speed = 1.3;
     var nav = document.querySelector('.header nav');
     var header = document.querySelector('.header');

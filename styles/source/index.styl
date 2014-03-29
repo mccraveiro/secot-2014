@@ -1,14 +1,8 @@
 /*! index.css */
 
-// not being used
-color0 = #D00C18 // vermelho secot
-color1 = #2E0927 // navy
-color3 = #FF2D00
-color4 = #04756F // cinza
-color5 = #FFF1C7
 // being used
-color2 = #D90000 // vermelho
-color6 = rgb(180, 180, 180)
+color1 = rgb(217, 0, 0)
+color2 = rgb(180, 180, 180)
 
 navheight = 4em
 
@@ -23,10 +17,11 @@ body
     font-family: 'Exo 2', sans-serif;
 
 section
-    padding: 3em 0
+    padding: 1em 0
     text-align: center
 
     p
+        line-height: 1.5em
         margin: 1em auto
         text-align: justify
         width: 800px
@@ -34,9 +29,8 @@ section
     &.header
         background-color: white
         box-sizing: border-box
-        color: color2
+        color: color1
         font-size: 16pt
-        height: 100%
         overflow: hidden
         padding-bottom: 7em
 
@@ -53,15 +47,15 @@ section
                 vertical-align: middle
 
             h2
-                color: color2
+                color: color1
                 font-weight: 100
                 font-size: 24pt
                 margin: -0.8em auto 4em
 
             button
-                background: color2
+                background: color1
                 border: 0
-                box-shadow: 0.4em 0.4em color6
+                box-shadow: 0.4em 0.4em color2
                 color: white
                 font-size: 18pt
                 font-weight: 700
@@ -70,11 +64,11 @@ section
                 padding: 1em 2em
 
                 &:active
-                    box-shadow: 0.2em 0.2em color6
+                    box-shadow: 0.2em 0.2em color2
                     margin: 0
 
         nav
-            background-color: color2
+            background-color: color1
             bottom: 0
             color: white
             font-size: 16pt
@@ -102,15 +96,3 @@ section
 
                     &:hover
                         text-decoration: underline
-
-#sobre:before
-#increvase:before
-#local:before
-#agenda:before
-#patrocinadores:before
-#palestrantes:before
-    display: block
-    content: " "
-    margin-top: -navheight
-    height: navheight
-    visibility: hidden
