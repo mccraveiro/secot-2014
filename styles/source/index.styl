@@ -58,7 +58,7 @@ section
                 margin: 0 8px
                 overflow: hidden
                 vertical-align: middle
-                width: (64 * num)px
+                width: ((72 * num) - 16)px
 
                 img
                     border-radius: 50%
@@ -126,6 +126,7 @@ section
             position: absolute
             vertical-align: middle
             width: 100%
+            z-index: 9999
 
             &.fixed
                 position: fixed
@@ -164,3 +165,25 @@ section
                 vertical-align: middle
                 max-height: 150px
                 max-width: 150px
+
+    &.agenda
+        p
+            text-align: center
+
+    #map
+        height: 500px
+
+    .endereco
+        background-color: white
+        left: 50%
+        margin-top: -450px
+        position: absolute
+        width: 300px
+        z-index: 100
+
+        address
+            font-size: 10pt;
+            font-style: normal;
+            line-height: 1.5em
+            padding: 30px
+            text-align: left

@@ -1,3 +1,7 @@
+// Load maps
+var map;
+google.maps.event.addDomListener(window, 'load', initialize);
+
 window.onload = function () {
 
     window.onscroll = function () {
@@ -11,6 +15,12 @@ window.onload = function () {
     // call the first time in case URL has ID anchor
     updateHeader();
 };
+
+google.maps.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+});
 
 function updateHeader () {
 
@@ -47,4 +57,25 @@ function resetHeader () {
     headerContent.style.marginTop = '0px';
     headerContent.style.opacity = 1;
     nav.className = "";
+}
+
+function initialize() {
+
+    var mapOptions = {
+        scrollwheel: false,
+        draggable: false,
+        disableDefaultUI: true,
+        center: new google.maps.LatLng(-23.48981, -47.43500),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(-23.48863, -47.44442),
+        map: map,
+        title: '',
+        icon: 'images/map-marker.png'
+    });
 }
