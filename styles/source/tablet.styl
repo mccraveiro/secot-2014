@@ -8,6 +8,7 @@
 
         h1
             font-size: 20pt
+            margin-bottom: 1em
 
         p
             box-sizing: border-box
@@ -15,6 +16,22 @@
             padding: 0 2em
             width: 100%
             max-width: 800px
+
+        button
+            font-size: 14pt
+            font-weight: 500
+            margin: 2em auto 1em
+            padding: 1em 2em
+
+        .row
+            max-width: 800px
+            width: auto
+
+            for num in (1..10)
+
+                .span{num}
+                    margin: 0 1%
+                    width: (8 * num)%
 
         &.header
             padding-bottom: 2em
@@ -42,3 +59,18 @@
 
             nav
                 display: none
+
+        &.patrocinadores
+            p
+                img
+                    margin: 30px 20px
+                    max-height: 200px
+                    max-width: 200px
+
+        &.apoio
+            p
+                img
+                    margin: 30px 50px
+                    vertical-align: middle
+                    max-height: 100px
+                    max-width: 100px

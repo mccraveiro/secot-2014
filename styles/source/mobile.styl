@@ -8,12 +8,33 @@
 
         h1
             font-size: 20pt
+            margin-bottom: 0.5em
 
         p
             box-sizing: border-box
             font-size: 10pt
             padding: 0 2em
             width: 100%
+
+        button
+            font-size: 12pt
+            font-weight: 500
+            margin: 2em auto 0
+            padding: 0.8em 1.5em
+
+        .row
+            margin-top: 2em
+            width: 100%
+
+            for num in (1..10)
+
+                .span{num}
+                    display: block
+                    margin: 0 auto
+                    width: 100% !important
+
+                    img
+                        max-width: 120px
 
         &.header
             padding-bottom: 2em
@@ -41,3 +62,28 @@
 
             nav
                 display: none
+
+        &.palestrantes
+            .row
+                display: table
+
+                .span2
+                    display: table-header-group
+
+                .span8
+                    display: table-footer-group
+
+        &.patrocinadores
+            p
+                img
+                    margin: 30px 20px
+                    max-height: 200px
+                    max-width: 200px
+
+        &.apoio
+            p
+                img
+                    margin: 30px 50px
+                    vertical-align: middle
+                    max-height: 100px
+                    max-width: 100px

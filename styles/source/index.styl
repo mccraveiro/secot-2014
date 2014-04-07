@@ -3,6 +3,8 @@
 // being used
 color1 = rgb(217, 0, 0)
 color2 = rgb(180, 180, 180)
+color3 = rgb(4, 49, 77)
+color4 = rgb(11, 137, 217)
 
 navheight = 4em
 
@@ -20,11 +22,52 @@ section
     padding: 1em 0
     text-align: center
 
+    h1
+        margin-bottom: 1.5em
+
     p
         line-height: 1.5em
         margin: 1em auto
         text-align: justify
         width: 800px
+
+    button
+        background: color4
+        border: 0
+        color: white
+        font-size: 14pt
+        font-weight: 500
+        margin: 2em auto 1em
+        outline: 0
+        padding: 1em 2em
+
+        &:hover
+        &:active
+            background: color3
+
+    .row
+        display: block
+        margin: 0 auto
+        width: 800px
+
+        for num in (1..10)
+
+            .span{num}
+                box-sizing: border-box
+                display: inline-block
+                margin: 0 8px
+                overflow: hidden
+                vertical-align: middle
+                width: (64 * num)px
+
+                img
+                    border-radius: 50%
+                    max-width: 160px
+                    width: 100%
+
+                p
+                    font-size: 10pt
+                    width: 100%
 
     &.header
         background-color: white
@@ -45,6 +88,10 @@ section
                 line-height: 2em
                 margin: 0 auto
                 vertical-align: middle
+
+                span
+                    font-weight: 700
+                    margin-right: 20px
 
             h2
                 color: color1
@@ -97,3 +144,23 @@ section
 
                     &:hover
                         text-decoration: underline
+
+    &.patrocinadores
+        p
+            text-align: center
+
+            img
+                margin: 30px 20px
+                vertical-align: middle
+                max-height: 300px
+                max-width: 300px
+
+    &.apoio
+        p
+            text-align: center
+
+            img
+                margin: 30px 50px
+                vertical-align: middle
+                max-height: 150px
+                max-width: 150px

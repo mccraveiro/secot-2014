@@ -1,17 +1,20 @@
+navheight = 4em
+
 // Large screens
 @media only screen and (min-width: 64.063em)
 
     .header
         height: 100%
 
-    #sobre:before
-    #increvase:before
-    #local:before
-    #agenda:before
-    #patrocinadores:before
-    #palestrantes:before
-        display: block
-        content: " "
-        margin-top: -navheight
-        height: navheight
-        visibility: hidden
+    .content
+        h1:before
+            display: block
+            content: " "
+            margin-top: -navheight
+            height: navheight
+            visibility: hidden
+
+    h4
+        margin: 2em auto 0
+        text-align: left
+        width: 800px
