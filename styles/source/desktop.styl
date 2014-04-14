@@ -6,6 +6,11 @@ navheight = 4em
     .header
         height: 100%
 
+        .header-content
+
+            button
+                display: none
+
     .content
         h1:before
             display: block
@@ -18,3 +23,27 @@ navheight = 4em
         margin: 2em auto 0
         text-align: left
         width: 800px
+
+    .logo
+        margin-top: -50px
+        display: none
+
+@media only screen and (min-width: 64.063em) and (min-height: 500px) and (max-height: 600px)
+    .logo
+        height: 150px
+        display: block
+
+@media only screen and (min-width: 64.063em) and (min-height: 600px) and (max-height: 700px)
+    .logo
+        height: 250px
+        display: block
+
+@media only screen and (min-width: 64.063em) and (min-height: 700px) and (max-height: 800px)
+    .logo
+        height: 300px
+        display: block
+
+@media only screen and (min-width: 64.063em) and (min-height: 800px)
+    .logo
+        height: 350px
+        display: block
